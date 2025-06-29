@@ -1,13 +1,14 @@
 import './App.css'
-import Topbar from "./components/Topbar.jsx";
-import Screen from "./components/Screen.jsx";
+import LandingProjector from "./components/LandingProjector.jsx";
+import Footer from "./components/Footer.jsx";
+
 
 function App() {
 
   return (
     <>
-        <Topbar />
-        <Screen />
+        <LandingProjector />
+        <Footer />
     </>
   )
 }
