@@ -33,7 +33,7 @@ function LandingProjector() {
     return (
         <>
             <div className={`flex w-[100%] justify-center`}>
-                <img src={logImage} className={`w-[750px] h-[150px]`}/>
+                <img src={logImage} alt={`Horizontal tree log`} className={`w-[750px] h-[150px]`}/>
             </div>
             <div className={`flex w-full justify-center space-x-25 overflow-y-hidden mt-[-4px] pb-[75px]`}>
                     <span onClick={handleClick}
