@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "gbYIpbdxSzk=",
+  "success": false,
+  "projectFilePath": "/Users/daniil/Desktop/Platform/Client/Client.esproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1012",
+      "level": "Error",
+      "message": "Platform version is not present for one or more target frameworks, even though they have specified a platform: net6.0-none",
+      "projectPath": "/Users/daniil/Desktop/Platform/Client/Client.esproj",
+      "filePath": "/Users/daniil/Desktop/Platform/Client/Client.esproj",
+      "targetGraphs": []
+    }
+  ]
+}

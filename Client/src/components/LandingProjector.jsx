@@ -30,6 +30,13 @@ function LandingProjector() {
         )
     }
 
+    function heavenAction(viewId) {
+        if(!isVisible) {
+            setVisibility(true);
+        }
+        setViewId(viewId);
+    }
+
     return (
         <>
             <div className={`flex w-[100%] justify-center`}>
@@ -38,13 +45,13 @@ function LandingProjector() {
             <div className={`flex w-full justify-center space-x-25 overflow-y-hidden mt-[-4px] pb-[75px]`}>
                     <span onClick={handleClick}
                         className={`bg-white shadow-xl/30 shadow-gray-500 h-[350px] w-[550px] ease-in-out transform transition duration-500
-                        rounded-b-[15px] cursor-pointer flex justify-center items-center ` + (isVisible ? `translate-y-0` : `translate-y-[-95%] opacity-15`)}>
+                        rounded-b-[15px] cursor-pointer flex justify-center items-center ` + (isVisible ? `translate-y-0` : `translate-y-[-95%] opacity-35`)}>
                         {renderComponent(viewId)}
                     </span>
             </div>
-            <div className={`flex w-full justify-center space-x-25 mb-10`}>
-                <HeavenBtn text={`ABOUT ME`} id={`aboutDaniilas`} action={()=>{setViewId(1)}}/>
-                <HeavenBtn text={`ABOUT LOLA`} id={`aboutLola`} action={()=>{setViewId(2)}}/>
+            <div className={`flex w-full justify-center space-x-25 mb-5`}>
+                <HeavenBtn text={`ABOUT ME`} id={`aboutDaniilas`} action={()=>{heavenAction(1)}}/>
+                <HeavenBtn text={`ABOUT LOLA`} id={`aboutLola`} action={()=>{heavenAction(2)}}/>
             </div>
         </>
     )

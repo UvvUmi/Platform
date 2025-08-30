@@ -1,12 +1,20 @@
 @import 'tailwindcss';
 
+
+body {
+    background-image: url("public/river_bg_md.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+}
 :root {
     font-family: Avenir, Helvetica, Arial, sans-serif;
 
-  /*color-scheme: light dark;*/
-  /*color: rgba(255, 255, 255, 0.87);*/
-  /*background-color: #242428;*/
-    background-image: url("public/background01.jpg");
+    /*color-scheme: light dark;*/
+    /*color: rgba(255, 255, 255, 0.87);*/
+    /*background-color: #D4DB9E*/
+
 
   /*font-synthesis: none;*/
   /*text-rendering: optimizeLegibility;*/
